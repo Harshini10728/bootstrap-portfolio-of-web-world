@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(9, 10, 9);
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        nav {
+            background-color: rgb(247, 5, 247);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: #000;
+            text-decoration: none;
+            padding: 0 10px;
+            letter-spacing: 0.8px;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: blueviolet;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+
+        .progress-circle {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .progress-circle__svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .progress-circle__background {
+            fill: none;
+            stroke: #ddd;
+            stroke-width: 10;
+        }
+
+        .progress-circle__bar {
+            fill: none;
+            stroke: #4caf50;
+            stroke-width: 10;
+            stroke-dasharray: 0 100;
+            transform-origin: center;
+            transform: rotate(-90deg);
+            transition: stroke-dasharray 0.3s ease;
+        }
+
+        .progress-circle__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .can {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #f1eded;
+            border-radius: 5px;
+            background-color: #050404;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+        }
+
+        .phone-icon::before {
+            content: "📞";
+            margin-right: 8px;
+        }
+
+        .email-icon::before {
+            content: "✉";
+            margin-right: 8px;
+        }
+
+        .github-icon::before {
+            content: "🐱";
+            margin-right: 8px;
+        }
+
+        .linkedin-icon::before {
+            content: "🔗";
+            margin-right: 8px;
+        }
+
+        .facebook-icon::before {
+            content: "📘";
+        }
+
+        .twitter-icon::before {
+            content: "🐦";
+        }
+
+        .instagram-icon::before {
+            content: "📸";
+        }
+
+        .linkedin-icon::before {
+            content: "🔗";
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="https://www.linkedin.com/in/harshini-m-bb3932275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link">My LinkedIn</a>
+        <a href="about.html" class="nav-link">Project</a>
+        <a href="demo.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+    </nav>
+
+    <div class="container my-5">
+        <div class="image">
+            <img src="developer.png" class="img-fluid" alt="Developer Image">
+            <div class="can mt-4">
+                <h2 class="text-primary">TECHNICAL SKILLS:</h2>
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99.9%;">99.9%</div>
+                </div>
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99.9%;">99.9%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99.9%;">99.9%</div>
+                </div>
+                <p>PHP</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99.9%;">99.9%</div>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <h2 class="text-primary" align="left">Career Objective:</h2>
+            <p style="font-size: 20px; padding: 50px;">
+                <b>I am a very practical person with an amiable disposition and strong cultural values. Seeking a position as a lecturer where I can impart practical knowledge alongside theoretical concepts.</b>
+            </p>
+
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="phone-icon"></i></a>
+              <a href="harshini107218@gmail.com" target="_blank"><i class="email-icon"></i></a>
+              <a href="https://harshini10728.github.io" target="_blank"><i class="github-icon"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="linkedin-icon"></i></a>
+            </div>
+
+            <h3 class="text-primary" align="left">Education:</h3>
+            <p style="font-size: 20px; padding: 50px;">
+                John Dewey Matriculation Higher Secondary School, Villupuram — SSLC-55%, HSC-50%<br><br>
+                2019 - 2022<br>
+                Theivanai Ammal College For Women, Villupuram — BCA-77%<br><br>
+                2022 - 2025<br>
+                Sri Manakula Vinayagar Engineering College, Puducherry — MCA-70%
+            </p>
+        </div>
+    </div>
+
+    <p class="text-primary" style="padding-left: 100px;" align="left"><b>Languages:</b></p>
+    <p style="font-size: 200%; color: rgb(0, 106, 255); padding-left: 100px;" align="left"><b>Languages:</b></p>
+    <div class="image-container">
+        <div class="ac">
+            <div class="progress-circle" id="circle1">
+                <svg class="progress-circle__svg">
+                    <circle class="progress-circle__background" cx="50%" cy="50%" r="40%"></circle>
+                    <circle class="progress-circle__bar" cx="50%" cy="50%" r="40%"></circle>
+                </svg>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">English</p>
+                <div class="progress-circle__text">0%</div>
+            </div>
+        </div>
+
+        <div class="am">
+            <div class="progress-circle" id="circle2">
+                <svg class="progress-circle__svg">
+                    <circle class="progress-circle__background" cx="50%" cy="50%" r="40%"></circle>
+                    <circle class="progress-circle__bar" cx="50%" cy="50%" r="40%"></circle>
+                </svg>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Hindi</p>
+                <div class="progress-circle__text">0%</div>
+            </div>
+        </div>
+
+        <div class="as">
+            <div class="progress-circle" id="circle3">
+                <svg class="progress-circle__svg">
+                    <circle class="progress-circle__background" cx="50%" cy="50%" r="40%"></circle>
+                    <circle class="progress-circle__bar" cx="50%" cy="50%" r="40%"></circle>
+                </svg>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Tamil</p>
+                <div class="progress-circle__text">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setProgress(circleId, percent) {
+            const circle = document.querySelector(`#${circleId} .progress-circle__bar`);
+            const text = document.querySelector(`#${circleId} .progress-circle__text`);
+
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+
+            const offset = circumference - (percent / 100) * circumference;
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = offset;
+
+            text.textContent = `${percent}%`;
+        }
+
+        setProgress('circle1', 99);
+        setProgress('circle2', 99);
+        setProgress('circle3', 99);
+    </script>
+</body>
+</html>
